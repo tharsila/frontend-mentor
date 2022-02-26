@@ -1,0 +1,138 @@
+@import 'variaveis';
+@import 'mixins';
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  flex-direction: column;
+  @include flex-center();
+
+  .container {
+    
+    .content {
+     
+      border-radius: 20px;
+      @include flex-center();
+      @include medium-device {
+        flex-direction: column;
+        margin-top: 40px;
+      }
+  
+      .card-content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        padding: 40px;
+        width: 290px;
+        @include medium-device {
+          width: 320px;
+        }
+
+        @include small-device {
+          width: 260px;
+        }
+        
+        h1 {
+          color: $very-light-gray;
+          font-weight: bold;
+          font-family: 'Big Shoulders Display', cursive;
+          margin: 30px 0;
+          text-transform: uppercase;
+        }
+  
+        p {
+          color: $transparent-white;
+          font-size: 15px;
+          margin-bottom: 70px;
+          line-height: 30px;
+          font-family: 'Lexend Deca', sans-serif;
+          @include medium-device {
+            margin-bottom: 40px;
+          }
+        }
+  
+        button {
+          background: white;
+          border: none;
+          padding: 15px 5px;
+          border-radius: 30px;
+          width: 70%;
+          height: 55px;
+          text-align: center;
+          text-transform: capitalize;
+          font-weight: bold;
+          margin-bottom: 10px;
+          font-family: 'Lexend Deca', sans-serif;
+          transition: all 0.3s ease-in;
+
+          &:hover {
+            border: 3px solid $very-light-gray;
+            background: transparent;
+          }
+        }
+      }
+  
+      .card-content.one {
+        background: $primary-color-card;
+        border-radius: 10px 0 0 10px;
+        @include medium-device {
+          border-radius: 10px 10px 0 0;
+        }
+        button {
+          color: $primary-color-card;
+
+          &:hover {
+            color: $very-light-gray;
+          }
+        }
+      }
+      .card-content.two {
+        background: $secondary-color-card;
+  
+        button {
+          color: $secondary-color-card;
+
+          &:hover {
+            color: $very-light-gray;
+          }
+        }
+      }
+      .card-content.three {
+        background: $third-color-card;
+        border-radius: 0 10px 10px 0;
+        @include medium-device {
+          border-radius: 0 0 10px 10px;
+        }
+        button {
+          color: $third-color-card;
+
+          &:hover {
+            color: $very-light-gray;
+          }
+        }
+      }
+    }
+  }
+
+  .attribution {
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 20px;; 
+    @include medium-device {
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+
+}
