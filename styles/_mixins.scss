@@ -1,0 +1,36 @@
+@import 'variables';
+
+@mixin gradient {
+  background: linear-gradient(147deg, #FF2525 0%, #FFE53B 74%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@mixin container {
+  max-width: $container-width;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin bg-card ($img) {
+  background-image: url('../img-card/#{$img}');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  filter: grayscale(100%);
+  transition: 0.6s;
+
+  &:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img-card/#{$img}');
+  }
+}
