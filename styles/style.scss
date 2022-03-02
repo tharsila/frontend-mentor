@@ -31,6 +31,9 @@ body {
     display: flex;
     justify-content: space-between;
     @include container;
+    @include mobile {
+      padding: 1.1rem;
+    }
 
     .brand {
       color: $primary-color;
@@ -45,6 +48,9 @@ body {
       ul {
         height: 100%;
         @include flex-center;
+        @include mobile {
+          display: none;
+        }
 
         li {
           margin: 0 1rem;
@@ -69,6 +75,9 @@ body {
       ul {
         height: 100%;
         @include flex-center;
+        @include mobile {
+          display: none;
+        }
 
         li {
           margin: 0 1rem;
@@ -89,6 +98,9 @@ body {
       justify-content: space-between;
       flex-wrap: wrap;
       padding: 0;
+      @include mobile {
+        flex-direction: column;
+      }
 
       .solution-card {
         width: 31%;
@@ -97,6 +109,10 @@ body {
         color: $primary-color;
         flex-direction: column;
         @include flex-center;
+        @include mobile {
+          width: 90%;
+          margin-bottom: 6%;
+        }
 
         .solution-card-title {
           font-size: 2rem;
@@ -125,38 +141,83 @@ body {
 
       #card-1 {
         @include bg-card('qr-code-component.jpg');
+        @include mobile {
+          filter: grayscale(0%);
+          background-size: 110%;
+          background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img-card/qr-code-component.jpg');
+        }
       }
 
       #card-2 {
         @include bg-card('stats-component.jpg');
+        @include mobile {
+          filter: grayscale(0%);
+          background-size: 110%;
+          background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img-card/stats-component.jpg');
+        }
       }
 
       #card-3 {
         @include bg-card('3-column-component.jpg');
+        @include mobile {
+          filter: grayscale(0%);
+          background-size: 110%;
+          background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img-card/3-column-component.jpg');
+        }
       }
 
       #card-4 {
         @include bg-card('under.jpg');
+        @include mobile {
+          filter: grayscale(0%);
+          background-size: 110%;
+          background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img-card/under.jpg');
+        }
       }
 
       #card-5 {
         @include bg-card('under.jpg');
+        @include mobile {
+          filter: grayscale(0%);
+          background-size: 110%;
+          background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img-card/under.jpg');
+        }
       }
 
       #card-6 {
         @include bg-card('under.jpg');
+        @include mobile {
+          filter: grayscale(0%);
+          background-size: 110%;
+          background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img-card/under.jpg');
+        }
       }
 
       #card-7{
         @include bg-card('under.jpg');
+        @include mobile {
+          filter: grayscale(0%);
+          background-size: 110%;
+          background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img-card/under.jpg');
+        }
       }
 
       #card-8 {
         @include bg-card('under.jpg');
+        @include mobile {
+          filter: grayscale(0%);
+          background-size: 110%;
+          background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img-card/under.jpg');
+        }
       }
 
       #card-9 {
         @include bg-card('under.jpg');
+        @include mobile {
+          filter: grayscale(0%);
+          background-size: 110%;
+          background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img-card/under.jpg');
+        }
       }
     }
   }

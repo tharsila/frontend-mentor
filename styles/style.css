@@ -40,6 +40,12 @@ body .header {
   margin: 0 auto;
 }
 
+@media (max-width: 425px) {
+  body .header {
+    padding: 1.1rem;
+  }
+}
+
 body .header .brand {
   color: #fff;
   font-size: 1.8rem;
@@ -58,6 +64,12 @@ body .header .navbar ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 425px) {
+  body .header .navbar ul {
+    display: none;
+  }
 }
 
 body .header .navbar ul li {
@@ -86,6 +98,12 @@ body .header .social-media ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 425px) {
+  body .header .social-media ul {
+    display: none;
+  }
 }
 
 body .header .social-media ul li {
@@ -117,6 +135,15 @@ body main .solution {
   padding: 0;
 }
 
+@media (max-width: 425px) {
+  body main .solution {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 body main .solution .solution-card {
   width: 31%;
   height: 200px;
@@ -135,6 +162,13 @@ body main .solution .solution-card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 425px) {
+  body main .solution .solution-card {
+    width: 90%;
+    margin-bottom: 6%;
+  }
 }
 
 body main .solution .solution-card .solution-card-title {
@@ -180,6 +214,16 @@ body main .solution #card-1:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/qr-code-component.jpg");
 }
 
+@media (max-width: 425px) {
+  body main .solution #card-1 {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+    background-size: 110%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img-card/qr-code-component.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/qr-code-component.jpg");
+  }
+}
+
 body main .solution #card-2 {
   background-image: url("../img-card/stats-component.jpg");
   background-size: 100%;
@@ -198,6 +242,16 @@ body main .solution #card-2:hover {
           filter: grayscale(0%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img-card/stats-component.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/stats-component.jpg");
+}
+
+@media (max-width: 425px) {
+  body main .solution #card-2 {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+    background-size: 110%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img-card/stats-component.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/stats-component.jpg");
+  }
 }
 
 body main .solution #card-3 {
@@ -220,6 +274,16 @@ body main .solution #card-3:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/3-column-component.jpg");
 }
 
+@media (max-width: 425px) {
+  body main .solution #card-3 {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+    background-size: 110%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img-card/3-column-component.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/3-column-component.jpg");
+  }
+}
+
 body main .solution #card-4 {
   background-image: url("../img-card/under.jpg");
   background-size: 100%;
@@ -238,6 +302,16 @@ body main .solution #card-4:hover {
           filter: grayscale(0%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img-card/under.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/under.jpg");
+}
+
+@media (max-width: 425px) {
+  body main .solution #card-4 {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+    background-size: 110%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img-card/under.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/under.jpg");
+  }
 }
 
 body main .solution #card-5 {
@@ -260,6 +334,16 @@ body main .solution #card-5:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/under.jpg");
 }
 
+@media (max-width: 425px) {
+  body main .solution #card-5 {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+    background-size: 110%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img-card/under.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/under.jpg");
+  }
+}
+
 body main .solution #card-6 {
   background-image: url("../img-card/under.jpg");
   background-size: 100%;
@@ -278,6 +362,16 @@ body main .solution #card-6:hover {
           filter: grayscale(0%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img-card/under.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/under.jpg");
+}
+
+@media (max-width: 425px) {
+  body main .solution #card-6 {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+    background-size: 110%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img-card/under.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/under.jpg");
+  }
 }
 
 body main .solution #card-7 {
@@ -300,6 +394,16 @@ body main .solution #card-7:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/under.jpg");
 }
 
+@media (max-width: 425px) {
+  body main .solution #card-7 {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+    background-size: 110%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img-card/under.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/under.jpg");
+  }
+}
+
 body main .solution #card-8 {
   background-image: url("../img-card/under.jpg");
   background-size: 100%;
@@ -320,6 +424,16 @@ body main .solution #card-8:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/under.jpg");
 }
 
+@media (max-width: 425px) {
+  body main .solution #card-8 {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+    background-size: 110%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img-card/under.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/under.jpg");
+  }
+}
+
 body main .solution #card-9 {
   background-image: url("../img-card/under.jpg");
   background-size: 100%;
@@ -338,6 +452,16 @@ body main .solution #card-9:hover {
           filter: grayscale(0%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img-card/under.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/under.jpg");
+}
+
+@media (max-width: 425px) {
+  body main .solution #card-9 {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+    background-size: 110%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img-card/under.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/under.jpg");
+  }
 }
 
 body footer {
