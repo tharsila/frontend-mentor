@@ -35,8 +35,21 @@
   }
 }
 
+@mixin animation {
+  @keyframes show-left {
+    from {
+      opacity: 0;
+      transform: translate3d(30px, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
 @mixin mobile {
-  @media (max-width: 425px) {
+  @media (max-width: 650px) {
     @content;
   }
 }
