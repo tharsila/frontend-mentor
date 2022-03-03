@@ -10,14 +10,14 @@
 </head>
 <body>
   <header class="header">
-    <a href="#" class="brand">frontend mentor solutions</a>
+    <a href="#" class="brand" id="brand">frontend mentor solutions</a>
     <nav class="navbar">
-      <ul>
+      <ul data-menu="navbar">
         <li>
-          <a href="#" class="active">home</a>
+          <a href="#card-1" class="active">home</a>
         </li>
         <li>
-          <a href="#">sobre</a>
+          <a href="#sobre">sobre</a>
         </li>
         <li>
           <a href="https://github.com/tharsila/frontend-mentor">soluções</a>
@@ -34,6 +34,7 @@
         </li>
       </ul>
     </div>
+    <div class="fas fa-bars" id="menu-hamburger" data-menu="hamburger" ></div>
   </header>
   <main>
     <div class="solution">
@@ -84,7 +85,18 @@
     </div>
   </main>
   <footer>
+    <div class="social-media-footer">
+      <ul>
+        <li>
+          <a href="https://github.com/tharsila" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/tharsila-borges-ab668276/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </li>
+      </ul>
+    </div>
     <p><span>frontend mentor solutions</span>&copy; 2022</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
