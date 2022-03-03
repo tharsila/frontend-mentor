@@ -5,6 +5,11 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  scroll-padding-top: 5rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -32,6 +37,9 @@ body .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -40,9 +48,16 @@ body .header {
   margin: 0 auto;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 650px) {
   body .header {
     padding: 1.1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 400;
+    background: #2F3034;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -51,10 +66,16 @@ body .header .brand {
   font-size: 1.8rem;
   text-transform: capitalize;
   font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  body .header .brand {
+    font-size: 1.1rem;
+  }
 }
 
 body .header .navbar ul {
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,9 +87,23 @@ body .header .navbar ul {
           align-items: center;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 650px) {
   body .header .navbar ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #2F3034;
+    width: 160px;
+    z-index: 100;
     display: none;
+    padding: 60px 0 20px 0;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+  body .header .navbar ul.active {
+    display: block;
+    -webkit-animation: show-left .3s forwards;
+            animation: show-left .3s forwards;
   }
 }
 
@@ -78,13 +113,18 @@ body .header .navbar ul li {
   font-size: 0.9rem;
 }
 
+@media (max-width: 650px) {
+  body .header .navbar ul li:not(:last-child) {
+    margin-bottom: 70px;
+  }
+}
+
 body .header .navbar ul li a.active {
   color: #8EF9F3;
 }
 
 body .header .navbar ul li a:hover {
   color: #8EF9F3;
-  /* @include gradient; */
 }
 
 body .header .social-media ul {
@@ -100,7 +140,7 @@ body .header .social-media ul {
           align-items: center;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 650px) {
   body .header .social-media ul {
     display: none;
   }
@@ -112,6 +152,33 @@ body .header .social-media ul li {
 
 body .header .social-media ul li a:hover {
   color: #fff;
+}
+
+body .header #menu-hamburger {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  body .header #menu-hamburger {
+    display: block;
+    position: relative;
+    z-index: 300;
+    font-size: 1.5rem;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+  }
+  body .header #menu-hamburger.fa-times {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@media (max-width: 650px) {
+  body main {
+    margin-top: 5rem;
+  }
 }
 
 body main .solution {
@@ -135,7 +202,7 @@ body main .solution {
   padding: 0;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 650px) {
   body main .solution {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -164,7 +231,7 @@ body main .solution .solution-card {
           align-items: center;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 650px) {
   body main .solution .solution-card {
     width: 90%;
     margin-bottom: 6%;
@@ -177,6 +244,7 @@ body main .solution .solution-card .solution-card-title {
   margin-bottom: 1rem;
   font-weight: 700;
   text-transform: capitalize;
+  text-align: center;
 }
 
 body main .solution .solution-card .solution-btn {
@@ -214,7 +282,7 @@ body main .solution #card-1:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/qr-code-component.jpg");
 }
 
-@media (max-width: 425px) {
+@media (max-width: 650px) {
   body main .solution #card-1 {
     -webkit-filter: grayscale(0%);
             filter: grayscale(0%);
@@ -244,7 +312,7 @@ body main .solution #card-2:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/stats-component.jpg");
 }
 
-@media (max-width: 425px) {
+@media (max-width: 650px) {
   body main .solution #card-2 {
     -webkit-filter: grayscale(0%);
             filter: grayscale(0%);
@@ -274,7 +342,7 @@ body main .solution #card-3:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/3-column-component.jpg");
 }
 
-@media (max-width: 425px) {
+@media (max-width: 650px) {
   body main .solution #card-3 {
     -webkit-filter: grayscale(0%);
             filter: grayscale(0%);
@@ -304,7 +372,7 @@ body main .solution #card-4:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/under.jpg");
 }
 
-@media (max-width: 425px) {
+@media (max-width: 650px) {
   body main .solution #card-4 {
     -webkit-filter: grayscale(0%);
             filter: grayscale(0%);
@@ -334,7 +402,7 @@ body main .solution #card-5:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/under.jpg");
 }
 
-@media (max-width: 425px) {
+@media (max-width: 650px) {
   body main .solution #card-5 {
     -webkit-filter: grayscale(0%);
             filter: grayscale(0%);
@@ -364,7 +432,7 @@ body main .solution #card-6:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/under.jpg");
 }
 
-@media (max-width: 425px) {
+@media (max-width: 650px) {
   body main .solution #card-6 {
     -webkit-filter: grayscale(0%);
             filter: grayscale(0%);
@@ -394,7 +462,7 @@ body main .solution #card-7:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/under.jpg");
 }
 
-@media (max-width: 425px) {
+@media (max-width: 650px) {
   body main .solution #card-7 {
     -webkit-filter: grayscale(0%);
             filter: grayscale(0%);
@@ -424,7 +492,7 @@ body main .solution #card-8:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/under.jpg");
 }
 
-@media (max-width: 425px) {
+@media (max-width: 650px) {
   body main .solution #card-8 {
     -webkit-filter: grayscale(0%);
             filter: grayscale(0%);
@@ -454,7 +522,7 @@ body main .solution #card-9:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/under.jpg");
 }
 
-@media (max-width: 425px) {
+@media (max-width: 650px) {
   body main .solution #card-9 {
     -webkit-filter: grayscale(0%);
             filter: grayscale(0%);
@@ -469,9 +537,64 @@ body footer {
   padding-bottom: 2rem;
 }
 
+body footer .social-media-footer {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  body footer .social-media-footer {
+    display: block;
+    margin-bottom: 10px;
+  }
+  body footer .social-media-footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body footer .social-media-footer ul li {
+    width: 10%;
+    text-align: center;
+  }
+  body footer .social-media-footer ul li i {
+    font-size: 1.2rem;
+  }
+}
+
 body footer span {
   color: #8EF9F3;
   font-weight: 700;
   text-transform: capitalize;
+}
+
+@-webkit-keyframes show-left {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(30px, 0, 0);
+            transform: translate3d(30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes show-left {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(30px, 0, 0);
+            transform: translate3d(30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
 }
 /*# sourceMappingURL=style.css.map */

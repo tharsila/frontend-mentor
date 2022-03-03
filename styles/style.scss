@@ -7,6 +7,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  scroll-padding-top: 5rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -29,10 +34,17 @@ body {
 
   .header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     @include container;
     @include mobile {
       padding: 1.1rem;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 400;
+      background: $background-color;
+      box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
     }
 
     .brand {
@@ -40,22 +52,42 @@ body {
       font-size: 1.8rem;
       text-transform: capitalize;
       font-weight: 700;
-      
+      cursor: pointer;
+      @include mobile {
+        font-size: 1.1rem;
+      }
     }
 
     .navbar {
 
       ul {
-        height: 100%;
         @include flex-center;
         @include mobile {
+          position: absolute;
+          top: 0;
+          right: 0;
+          background: $background-color;
+          width: 160px;
+          z-index: 100;
           display: none;
+          padding: 60px 0 20px 0;
+          box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+        
+          &.active {
+            display: block;
+            animation: show-left .3s forwards;
+          }
         }
-
+       
         li {
           margin: 0 1rem;
           text-transform: uppercase;
           font-size: 0.9rem;
+          @include mobile {
+            &:not(:last-child) {
+              margin-bottom: 70px;
+            }
+          }
 
           a.active {
             color: $secondary-color;
@@ -63,11 +95,8 @@ body {
 
           a:hover {
             color: $secondary-color;
-            /* @include gradient; */
-          }
-          
-        }
-        
+          }    
+        }    
       }
     }
 
@@ -88,10 +117,28 @@ body {
         }
       }
     }
+
+    #menu-hamburger {
+      display: none;
+      
+      @include mobile {
+        display: block;
+        position: relative;
+        z-index: 300;
+        font-size: 1.5rem;
+        transition: transform 0.2s;
+        
+        &.fa-times {
+          transform: rotate(180deg);
+        }
+      }
+    }
   }
 
   main {
-    
+    @include mobile {
+      margin-top: 5rem;
+    }
     .solution {
       @include container;
       @include flex-center;
@@ -120,6 +167,7 @@ body {
           margin-bottom: 1rem;
           font-weight: 700;
           text-transform: capitalize;
+          text-align: center;
         }
 
         .solution-btn {
@@ -136,7 +184,6 @@ body {
             color: $background-color;
           }
         }
-
       }
 
       #card-1 {
@@ -225,6 +272,30 @@ body {
   footer {
     text-align: center;
     padding-bottom: 2rem;
+    .social-media-footer {
+      display: none;
+    }
+
+    @include mobile {
+      .social-media-footer {
+        display: block;
+        margin-bottom: 10px;
+        
+        ul {
+          @include flex-center;
+          
+          li {
+            width: 10%;
+            text-align: center;
+            
+            i {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+
+    }
 
     span {
       color: $secondary-color;
@@ -232,5 +303,7 @@ body {
       text-transform: capitalize;
     }
   }
+
+  @include animation;
 
 }
