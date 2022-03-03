@@ -1,0 +1,16 @@
+const menuHamburger = document.querySelector('[data-menu="hamburger"]');
+const navMenu = document.querySelector('[data-menu="navbar"]');
+
+console.log(menuHamburger);
+
+function showMenu () {
+  menuHamburger.classList.toggle('fa-times');
+  navMenu.classList.toggle('active');
+}
+
+window.addEventListener('scroll', () => {
+menuHamburger.classList.remove('fa-times');
+navMenu.classList.remove('active');
+})
+
+menuHamburger.addEventListener('click', showMenu);
