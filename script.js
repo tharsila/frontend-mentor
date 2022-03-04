@@ -1,16 +1,8 @@
-const menuHamburger = document.querySelector('[data-menu="hamburger"]');
-const navMenu = document.querySelector('[data-menu="navbar"]');
+import initMenuMobile from './modules/menu-mobile.js';
+import initColorLink from './modules/color-link.js';
+import initModal from './modules/modal.js';
 
-console.log(menuHamburger);
 
-function showMenu () {
-  menuHamburger.classList.toggle('fa-times');
-  navMenu.classList.toggle('active');
-}
-
-window.addEventListener('scroll', () => {
-menuHamburger.classList.remove('fa-times');
-navMenu.classList.remove('active');
-})
-
-menuHamburger.addEventListener('click', showMenu);
+initMenuMobile();
+initColorLink()
+initModal();
