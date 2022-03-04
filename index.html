@@ -14,13 +14,13 @@
     <nav class="navbar">
       <ul data-menu="navbar">
         <li>
-          <a href="#card-1" class="active">home</a>
+          <a href="#card-1" data-nav="link">home</a>
         </li>
         <li>
-          <a href="#sobre">sobre</a>
+          <a href="#sobre" data-modal="open" data-nav="link">sobre</a>
         </li>
         <li>
-          <a href="https://github.com/tharsila/frontend-mentor" target="_blank">soluções</a>
+          <a href="https://github.com/tharsila/frontend-mentor" target="_blank" data-nav="link">soluções</a>
         </li>
       </ul>
     </nav>
@@ -97,6 +97,12 @@
     </div>
     <p><span>frontend mentor solutions</span>&copy; 2022</p>
   </footer>
-  <script src="script.js"></script>
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <button class="close" data-modal="close">X</button>
+      <p>Projeto feito com o intuito de resolver os desafios propostos pelo website <a href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor</a> com o objetivo de colocar em prática conhecimentos que adquirir através de cursos, documentação, etc.</p>
+    </div>
+  </section>
+  <script type="module" src="script.js"></script>
 </body>
 </html>
