@@ -1,0 +1,59 @@
+.modal-container {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 400;
+  @include flex-center;
+  display: none;
+  
+  
+  &.active {
+    display: flex;
+    animation: modal 0.3s forwards;
+  }
+
+  .modal {
+    width: 300px;
+    background: $text-color;
+    color: $primary-color;
+    padding: 40px;
+    border: 5px solid $secondary-color;
+    box-shadow: 0 0 0 5px $text-color;
+    position: relative;
+    
+    @include small-device {
+      width: 250px;
+    }
+    
+    .close {
+      position: absolute;
+      top: -20px;
+      right: -15px;
+      width: 50px;
+      height: 50px;
+      border: 4px solid $text-color;
+      border-radius: 50%;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+      background: $secondary-color;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: $text-color;
+      cursor: pointer;
+    }
+
+    p {
+      font-size: 18px;
+  
+      a {
+        color: $secondary-color;
+        font-weight: 700;
+      }
+    }
+  }
+
+  @include modal;
+ 
+}
