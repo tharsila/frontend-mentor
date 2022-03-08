@@ -23,13 +23,13 @@
  <h3>Mobile</h3>
  
 <div align="center">
-  
+  <img align="center" src ="https://user-images.githubusercontent.com/89864249/157139712-0530007f-9afc-414e-9bce-e7c18e5da0b9.gif" width="800px"/>
 </div>
  
  <h3>Web</h3>
  
 <div align="center">
- 
+  <img align="center" src ="https://user-images.githubusercontent.com/89864249/157139899-940a690a-7d05-4238-8200-708891bcda67.gif" width="800px"/>
 </div>
 
  
