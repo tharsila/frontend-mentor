@@ -2,7 +2,7 @@
  
  <h2>Projeto Online em: Vercel</h2>
  <ul>
-  <li><a href="frontend-mentor-tharsila.vercel.app"> Site frontend mentor solutions</a></li>
+  <li><a href="https://frontend-mentor-tharsila.vercel.app/"> Site frontend mentor solutions</a></li>
  </ul>
  
  <h2>Tabela de Conteúdos</h2>
