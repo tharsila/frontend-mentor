@@ -105,10 +105,6 @@
   scroll-padding-top: 5rem;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 ul {
   list-style: none;
 }
