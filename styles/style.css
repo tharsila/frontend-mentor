@@ -446,7 +446,7 @@ body main .solution #card-3:hover {
 }
 
 body main .solution #card-4 {
-  background-image: url("../img-card/under.jpg");
+  background-image: url("../img-card/advice-generator.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -461,8 +461,8 @@ body main .solution #card-4:hover {
   background-size: 110%;
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img-card/under.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/under.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img-card/advice-generator.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/advice-generator.jpg");
 }
 
 @media (max-width: 650px) {
@@ -470,8 +470,8 @@ body main .solution #card-4:hover {
     -webkit-filter: grayscale(0%);
             filter: grayscale(0%);
     background-size: 110%;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img-card/under.jpg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/under.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img-card/advice-generator.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-card/advice-generator.jpg");
   }
 }
 

@@ -18,12 +18,11 @@ body {
     @include flex-center;
     flex-direction: column;
     background: $card-color;
-    margin-bottom: 35px;
     border-radius: 10px;
-    max-width: 400px;
+    max-width: 450px;
     margin: 0 50px;
+    position: relative;
     
-
     .card-content {
       @include flex-center;
       flex-direction: column;
@@ -40,6 +39,7 @@ body {
   
       .text {
         margin-bottom: 30px;
+        width: 85%;
         text-align: center;
         color: $text-color;
         font-weight: 800;
@@ -48,26 +48,40 @@ body {
       }
   
       .pattern {
-        margin-bottom: 30px;
-        width: 80%;
+        margin-bottom: 4rem;
+        width: 90%;
       }
   
       .btn {
-        height: 45px;
-        width: 45px;
+        height: 55px;
+        width: 55px;
+        border: none;
         border-radius: 50%;
         background: $btn-color;
-        position: relative;
-  
+        position: absolute;
+        bottom: -30px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
         img {
-          width: 18px;
-          position: absolute;
-          top: 30%;
-          left: 33%;
+          width: 20px;
+        }
+
+        &:hover {
+          background-color: hsl(150, 53%, 44%);
         }
       }
     }
   }
     
+  .attribution {
+    margin-top: 45px;
+    text-align: center;
+    font-size: 11px;
+
+    a {
+      color: hsl(228, 45%, 44%); 
+    }
+  }
 
 }

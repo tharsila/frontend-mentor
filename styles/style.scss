@@ -212,11 +212,11 @@ body {
       }
 
       #card-4 {
-        @include bg-card('under.jpg');
+        @include bg-card('advice-generator.jpg');
         @include mobile {
           filter: grayscale(0%);
           background-size: 110%;
-          background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img-card/under.jpg');
+          background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img-card/advice-generator.jpg');
         }
       }
 

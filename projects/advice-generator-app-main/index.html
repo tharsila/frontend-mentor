@@ -4,32 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="stylesheet" href="./assets/styles/style.css">
   <title>Frontend Mentor | Advice generator app</title>
-
-  
-  <!-- <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style -->
 </head>
 <body>
   <div class="card-container">
     <div class="card-content">
 
-      <p class="title">Advice # <!-- Advice ID goes here --></p>
+      <p class="title">Advice # 1<span data-title="number"></span></p>
   
       <div class="text">
-        <p>
-          "It is easy to sit up and take notice, what's difficult is getting up and taking action."
+        <p data-text="advice">
+          "Remember that spiders are more afraid of you, than you are of them."
         </p>
       </div>
   
       <img class="pattern" src="assets/images/pattern-divider-desktop.svg" alt="" class="src">
   
-      <div class="btn">
+      <button class="btn" data-text="button">
         <img src="assets/images/icon-dice.svg" alt="">
-      </div>
+      </button>
 
     </div>
   </div>
@@ -39,5 +33,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -40,10 +40,10 @@ body .card-container {
       -ms-flex-direction: column;
           flex-direction: column;
   background: #323a49;
-  margin-bottom: 35px;
   border-radius: 10px;
-  max-width: 400px;
+  max-width: 450px;
   margin: 0 50px;
+  position: relative;
 }
 
 body .card-container .card-content {
@@ -74,6 +74,7 @@ body .card-container .card-content .title {
 
 body .card-container .card-content .text {
   margin-bottom: 30px;
+  width: 85%;
   text-align: center;
   color: #cee3e9;
   font-weight: 800;
@@ -82,22 +83,38 @@ body .card-container .card-content .text {
 }
 
 body .card-container .card-content .pattern {
-  margin-bottom: 30px;
-  width: 80%;
+  margin-bottom: 4rem;
+  width: 90%;
 }
 
 body .card-container .card-content .btn {
-  height: 45px;
-  width: 45px;
+  height: 55px;
+  width: 55px;
+  border: none;
   border-radius: 50%;
   background: #52ffa8;
-  position: relative;
+  position: absolute;
+  bottom: -30px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 body .card-container .card-content .btn img {
-  width: 18px;
-  position: absolute;
-  top: 30%;
-  left: 33%;
+  width: 20px;
+}
+
+body .card-container .card-content .btn:hover {
+  background-color: #35ac70;
+}
+
+body .attribution {
+  margin-top: 45px;
+  text-align: center;
+  font-size: 11px;
+}
+
+body .attribution a {
+  color: #3e52a3;
 }
 /*# sourceMappingURL=style.css.map */
