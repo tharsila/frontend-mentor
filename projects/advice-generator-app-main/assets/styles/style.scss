@@ -20,7 +20,7 @@ body {
     background: $card-color;
     border-radius: 10px;
     max-width: 450px;
-    margin: 0 50px;
+    margin: 0 20px;
     position: relative;
     
     .card-content {
@@ -79,8 +79,13 @@ body {
     text-align: center;
     font-size: 11px;
 
-    a {
-      color: hsl(228, 45%, 44%); 
+    p {
+      color: $text-color;
+
+      a {
+        color: hsl(228, 45%, 44%); 
+      }
+
     }
   }
 

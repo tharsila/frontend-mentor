@@ -42,7 +42,7 @@ body .card-container {
   background: #323a49;
   border-radius: 10px;
   max-width: 450px;
-  margin: 0 50px;
+  margin: 0 20px;
   position: relative;
 }
 
@@ -114,7 +114,11 @@ body .attribution {
   font-size: 11px;
 }
 
-body .attribution a {
+body .attribution p {
+  color: #cee3e9;
+}
+
+body .attribution p a {
   color: #3e52a3;
 }
 /*# sourceMappingURL=style.css.map */
