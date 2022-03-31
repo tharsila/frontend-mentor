@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #121417;
+  font-family: 'Overpass', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+body .card-container {
+  background: #252d37;
+  border-radius: 30px;
+  margin: 15px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .card-container .card-content {
+  max-width: 450px;
+  padding: 1.5rem 1.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .card-container .card-content .img {
+  width: 45px;
+  height: 45px;
+  margin: 30px 0;
+  border-radius: 50%;
+  background: rgba(124, 135, 152, 0.2);
+  position: relative;
+}
+
+body .card-container .card-content .img img {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+}
+
+body .card-container .card-content h1 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+body .card-container .card-content p {
+  color: #959eac;
+  margin-bottom: 20px;
+  width: 90%;
+  line-height: 1.4rem;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+body .card-container .card-content .rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+body .card-container .card-content .rate .rate-circle {
+  background: rgba(124, 135, 152, 0.2);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 5px;
+  position: relative;
+}
+
+body .card-container .card-content .rate .rate-circle span {
+  position: absolute;
+  top: 16px;
+  left: 21px;
+  font-weight: 700;
+  color: #959eac;
+}
+
+body .card-container .card-content button {
+  background: #fb7413;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 100%;
+  height: 45px;
+  border-radius: 20px;
+  border: none;
+  margin: 30px 0;
+  cursor: pointer;
+}
+
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+body .attribution p {
+  color: white;
+}
+
+body .attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */

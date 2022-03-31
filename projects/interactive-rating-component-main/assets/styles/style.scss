@@ -1,0 +1,112 @@
+@import 'mixin';
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $body-color;
+  font-family: 'Overpass', sans-serif;
+  @include flex-center;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .card-container {
+    background: $card-color;
+    border-radius: 30px;
+    margin: 15px 30px;
+    @include flex-center;
+    
+    .card-content {
+      max-width: 450px;
+      padding: 1.5rem 1.9rem;
+      @include flex-center;
+      align-items: start;
+      flex-direction: column;
+
+      .img {
+        width: 45px;
+        height: 45px;
+        margin: 30px 0;
+        border-radius: 50%;
+        background: $rate-color;
+        position: relative;
+
+        img {
+          position: absolute;
+          top: 14px;
+          left: 14px;
+        }
+      }
+
+      h1 {
+        color: $main-text-color;
+        margin-bottom: 10px;
+      }
+
+      p {
+        color: $text-color;
+        margin-bottom: 20px;
+        width: 90%;
+        line-height: 1.4rem;
+        font-size: 15px;
+        font-weight: 400;
+      }
+
+      .rate {
+        @include flex-center;
+        justify-content: space-between;
+        width: 100%;
+
+        .rate-circle {
+          background: $rate-color;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          margin-right: 5px;
+          position: relative;
+
+          span {
+            position: absolute;
+            top: 16px;
+            left: 21px;
+            font-weight: 700;
+            color: $text-color;
+          }
+        }
+      }
+
+      button {
+        background:$btn-color;
+        color: $main-text-color;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        width: 100%;
+        height: 45px;
+        border-radius: 20px;
+        border: none;
+        margin: 30px 0;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .attribution { 
+    font-size: 11px; 
+    text-align: center;
+    
+    p {
+      color: $main-text-color;
+    }
+  
+    a { 
+      color: hsl(228, 45%, 44%); 
+    }
+  }
+    
+}
+
