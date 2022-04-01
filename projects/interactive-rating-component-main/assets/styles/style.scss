@@ -20,77 +20,125 @@ body {
     border-radius: 30px;
     margin: 15px 30px;
     @include flex-center;
-    
-    .card-content {
-      max-width: 450px;
-      padding: 1.5rem 1.9rem;
-      @include flex-center;
-      align-items: start;
-      flex-direction: column;
 
-      .img {
-        width: 45px;
-        height: 45px;
-        margin: 30px 0;
-        border-radius: 50%;
-        background: $rate-color;
-        position: relative;
-
-        img {
-          position: absolute;
-          top: 14px;
-          left: 14px;
-        }
-      }
-
-      h1 {
-        color: $main-text-color;
-        margin-bottom: 10px;
-      }
-
-      p {
-        color: $text-color;
-        margin-bottom: 20px;
-        width: 90%;
-        line-height: 1.4rem;
-        font-size: 15px;
-        font-weight: 400;
-      }
-
-      .rate {
+    .card-container-one {
+      
+      .card-content {
+        max-width: 390px;
+        padding: 1.5rem 1.9rem;
         @include flex-center;
-        justify-content: space-between;
-        width: 100%;
-
-        .rate-circle {
-          background: $rate-color;
-          width: 50px;
-          height: 50px;
+        align-items: start;
+        flex-direction: column;
+  
+        .img {
+          padding: 10px 13px;
+          margin-bottom: 1.5rem;
           border-radius: 50%;
-          margin-right: 5px;
-          position: relative;
-
-          span {
-            position: absolute;
-            top: 16px;
-            left: 21px;
-            font-weight: 700;
-            color: $text-color;
+          background: $rate-color;
+         
+          img {
+            margin-top: 3px;
           }
         }
+  
+        h1 {
+          color: $main-text-color;
+          margin-bottom: 10px;
+        }
+  
+        p {
+          color: $text-color;
+          margin-bottom: 20px;
+          width: 90%;
+          line-height: 1.4rem;
+          font-size: 15px;
+          font-weight: 400;
+        }
+  
+        .rate {
+          @include flex-center;
+          justify-content: space-between;
+          width: 100%;
+          
+          .rate-circle {
+            background: $rate-color;
+            padding: 12px 19px;
+            border-radius: 50%;
+            margin-right: 5px;
+            color: $text-color;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease-in;
+  
+            &:hover {
+              background: $btn-color;
+              color: $main-text-color;
+            }
+          }
+        }
+
+        button {
+          background:$btn-color;
+          color: $main-text-color;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-weight: 700;
+          width: 100%;
+          height: 45px;
+          border-radius: 20px;
+          border: none;
+          margin: 30px 0;
+          cursor: pointer;
+          transition: all 0.3s ease-in;
+  
+          &:hover {
+            background: $main-text-color;
+            color: $btn-color;
+          }
+        }    
+      }
+    }
+
+    .card-container-two {
+
+      &.hidden {
+        display: none;
       }
 
-      button {
-        background:$btn-color;
-        color: $main-text-color;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        width: 100%;
-        height: 45px;
-        border-radius: 20px;
-        border: none;
-        margin: 30px 0;
-        cursor: pointer;
+      .card-content {
+        max-width: 390px;
+        padding: 1.5rem 1.9rem;
+        @include flex-center;
+        flex-direction: column;
+        text-align: center;
+    
+        .img {
+          margin-top: 1rem;
+        }
+    
+        .info {
+          background: $rate-color;
+          border-radius: 30px;
+          padding: 8px 10px;
+          color: $btn-color;
+          margin: 2rem 0;
+          
+          h4 {
+            font-weight: 400;
+          }
+        }
+    
+        h2 {
+          margin-bottom: 1rem;
+          color: $main-text-color;
+        }
+    
+        p {
+          color: $text-color;
+          width: 95%;
+          margin-bottom: 1rem;
+          line-height: 25px;
+        }
       }
     }
   }
